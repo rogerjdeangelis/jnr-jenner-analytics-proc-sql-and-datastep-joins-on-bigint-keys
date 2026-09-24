@@ -4,13 +4,20 @@ c:/utl/jnr-jenner-analytics-proc-sql-and-datastep-joins-on-bigint-keys.sas
 
 Jenner Analytics proc sql and datastep joins on bigint keys
 
- PROBLEM:
-   Given two CSVs represemting SDTM datasets, dm and ae, joun on usubjid has bigintdatatype.
-   Join dm to ae and subset for females using proc sql and dataset merge
+Too long to post, see
+https://github.com/rogerjdeangelis/jnr-jenner-analytics-proc-sql-and-datastep-joins-on-bigint-keys
 
- Process
-   1  Convert CSVs dm(demographics), and ae(adverse events) to Jenner parquet files
-   2  Use Proc sql and a datastep merge to jon dm to ae
+RELATED
+https://github.com/rogerjdeangelis/jnr-jenner-analytics-join-clinical-demographics-with-adverse-events-using-a-bigint-patient-number
+https://github.com/rogerjdeangelis/jnr-alpha-jenner-analytics-extract-postgresql-table-with-bigint-and-process-bigint-with-datastep
+
+PROBLEM:
+  Given two CSVs represemting SDTM datasets, dm and ae, joun on usubjid has bigintdatatype.
+  Join dm to ae and subset for females using proc sql and dataset merge
+
+Process
+  1  Convert CSVs dm(demographics), and ae(adverse events) to Jenner parquet files
+  2  Use Proc sql and a datastep merge to jon dm to ae
 
  WHAT I WANT.
  NOTE:  Join dm and ae on usubjid which has dataype bigint using proc sql.
@@ -444,4 +451,4 @@ NOTE: PROC PRINT data=prq.dmae
 
 NOTE: PROC PRINT completed: 2 observations printed, 9 variables
 
-/*--- END ---*/
+/*--- END ---*/ 
